@@ -1,17 +1,24 @@
-<script setup>
-import AppTitle from './components/AppTitle.vue'
+<script>
+import AppTitleVue from './components/AppTitle.vue';
+import AppHeroVue from './components/AppHero.vue';
 
 export default {
-  components: {
-    AppTitle
+  data() {
+    return {
+
+    }
   },
+  components: {
+    AppTitleVue,
+    AppHeroVue
+  }
 }
 </script>
 
 
-
 <template>
-  <AppTitle></AppTitle>
+  <AppTitleVue></AppTitleVue>
+  <AppHeroVue></AppHeroVue>
 </template>
 
 <style scoped>
